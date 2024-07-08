@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add Font-Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <div class="container">
+        <video src="video/youtube-video.mp4" id="video" class="screen" poster="images/54a9766fc75926c2adcd3181afe26db1.jpg" ></video>
+        <div class="controls">
+
+
+            <button class="btn" id="play">
+                <i class="fa fa-play fa-2x"></i>
+            </button>
+
+            <button class="btn" id="stop">
+                <i class="fa fa-stop fa-2x"></i>
+            </button>
+
+            <div class="progress-bar"> <span class="progress-value"></span></div>
+            <span class="timestamp" id="timestamp">00:00</span>
+
+        </div>
+
+    </div>
+    <script  defer src="js/index.js"></script>
+</body>
+</html>

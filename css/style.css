@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+}
+.screen{
+    width: 50vw;
+    height: 70vh;
+    object-fit: fill;
+}
+#video{
+    cursor: pointer;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 4px;
+}
+.controls .progress-bar{
+    height: 7px;
+    width:100%;
+    background-color: #eee;
+    cursor: pointer;
+    margin: 0 8px;
+}
+.controls .progress-bar .progress-value{
+height: 7px;
+width:0;
+background-color:#dc3545;
+display: block;
+
+}
+
+.controls .btn{
+    margin-left: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+.controls .fa-play {
+    color: #28a745;
+}
+.controls .fa-play:focus {
+outline: none;
+border: none;
+}
+.controls .fa-stop {
+    color: #dc3545;
+}
+.controls .fa-stop:focus {
+    outline: none;
+    border: none;
+    }
+.controls .fa-pause {
+    color: #fff;
+}
+.controls .fa-pause:focus {
+    outline: none;
+    border: none;
+    }
+.controls .timestamp {
+ font-weight: bold;
+ flex-shrink: 0;
+}
